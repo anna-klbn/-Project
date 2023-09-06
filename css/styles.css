@@ -1,3 +1,6 @@
+html{
+    box-sizing: border-box;
+}
 :root{
 --primary-white-color:#FFF;
 --primary-blue-color: #2196F3;
@@ -5,9 +8,11 @@
 --primary-text-color: #757575;
 }
 body{
+
     background-color: var(--primary-white-color);
     font-family: 'Roboto', sans-serif;
     font-style: normal;
+    font-weight: 400;
     color:var(--primary-black-color);
 }
 a{
@@ -15,6 +20,13 @@ a{
 }
 ul{
     list-style: none;
+}
+h1,
+h2,
+p,
+ul {
+    margin: 0;
+    padding: 0;
 }
 /* header */
 .logo{
@@ -54,6 +66,12 @@ ul{
 .auth-nav__item{
 
 } */
+.header-container{
+    width: 1230px;
+    margin: 0px auto;
+    padding: 0px 15px;
+ 
+}
 .auth-nav__link{
     color: var(--primary-text-color);
     font-size: 14px;
@@ -70,6 +88,8 @@ ul{
     line-height: 1.36;
     letter-spacing: 2.64px;
     text-transform: uppercase;
+
+    text-align: center;
 }
 .hero-section__button{
     border-radius: 4px;
@@ -82,22 +102,38 @@ ul{
     line-height: 1.86;
     letter-spacing: 0.96px;
     cursor: pointer;
+    border: 1px solid var(--primary-blue-color);
+
+    padding: 13px 24px;
 }
 
 /* skills-section */
+.skills-container,
+.teams-container,
+.work-container,
+.card-container{
+    width: 1230px;
+    margin: 0px auto;
+    padding: 0px 15px 94px 15px;
+
+}
 .skills-section__item{
     font-size: 14px;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+
+    
 }
 .skills-section__text{
     color: var(--primary-text-color);
     font-size: 14px;
-    font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
+    font-weight: 400;
+
+    margin-top: 10px;
 }
 
 /*Work-section*/
@@ -106,24 +142,50 @@ ul{
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.08px;
+
+    margin-bottom: 50px;
+
+
 }
 /*Teams-section*/
+.teams-container{
+    background-color: #F5F4FA;
+    padding-top: 94px;
+}
+.teams-section__title{
+ 
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    margin-bottom: 50px;
+}
 .teams-section__name{
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.48px;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .teams-section__profession{
     color: var(--primary-text-color);
     font-size: 16px;
-    font-weight: 400;
     line-height: normal;
     letter-spacing: 0.48px;
 }
 
 /* footer */
+.footer-container{
+    background-color: #2F303A;
+    width: 1230px;
+    margin: 0px auto;
+    padding: 60px 15px;
+}
 .logo-footer{
     color: var(--primary-blue-color);
     font-family: Raleway;
@@ -131,6 +193,8 @@ ul{
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.78px;
+
+    
 }
 .logo-footer span{
     color: var(--primary-white-color);
@@ -139,9 +203,10 @@ ul{
     color:rgba(255, 255, 255, 0.60);
     font-family: Roboto;
     font-size: 14px;
-    font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.42px;
+
+    
 }
 .footer-link:hover{
     color: var(--primary-white-color);
@@ -169,7 +234,8 @@ ul{
 .card-set__group{
     color: var(--primary-text-color);
     font-size: 16px;
-    font-weight: 400;
     line-height: 1.87;
     letter-spacing: 0.48px;
 }
+
+
