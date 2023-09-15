@@ -1,0 +1,15 @@
+%list {
+    list-style: none;
+}
+%link {
+    text-decoration: none;
+}
+%flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%transition{
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

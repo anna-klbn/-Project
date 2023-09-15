@@ -1,0 +1,40 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+body.menu-open {
+    overflow: hidden;
+}
+
+img {
+    display: block;
+}
