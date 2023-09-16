@@ -1,9 +1,7 @@
 .footer-container {
     background-color: $primary-gray-color;
-    width: 1230px;
-    margin: 0px auto;
+    @extend %container;
     padding: 60px 15px;
-
     display: flex;
     align-items: baseline
 }

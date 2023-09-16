@@ -1,10 +1,11 @@
 .skills-section {
-    
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
 }
 .skills-container{
-    width: 1230px;
-    margin: 0px auto;
-    padding: 94px 15px 94px 15px;
+    @extend %container;
 }
 .skills-section__list{
     display: flex;
@@ -26,6 +27,10 @@
     &:not(:last-child){
     margin-right: 30px;
     }
+
+    @media screen and (min-width: 1200px) {
+         width: calc((100% - 120px) / 4);
+    }
 }
 
 .skills-section__title{
@@ -34,6 +39,11 @@
     line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: flex-start;
+    }
 }
 
 .skills-section__text{

@@ -1,8 +1,5 @@
 .header-container {
-    width: 1230px;
-    margin: 0px auto;
-    display: flex;
-    padding: 24px 15px 25px 15px;
+    @extend %container;
 
     border-bottom: 1px solid #ececec;
 }

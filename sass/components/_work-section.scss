@@ -1,3 +1,9 @@
+.work-section{
+    padding-bottom: 94px;
+}
+.work-container {
+    @extend %container;
+}
 .work-section__title {
     font-size: 36px;
     font-weight: 700;
@@ -7,11 +13,7 @@
 
     margin-bottom: 50px;
 }
-.work-container{
-    width: 1230px;
-    margin: 0px auto;
-    padding: 0px 15px 94px 15px;
-}
+
 .work-section__list {
     display: flex;
     @extend %list;

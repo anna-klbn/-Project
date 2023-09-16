@@ -1,9 +1,11 @@
+.clients-section{
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 94px;
+    }
+}
 .clients-container {
     text-align: center;
-
-    width: 1230px;
-    margin: 0px auto;
-    padding: 94px 15px 94px 15px;
+    @extend %container;
 }
 
 .clients-section__title {
@@ -25,6 +27,11 @@
     &:not(:last-child) {
         margin-right: 30px;
     }
+    
+  @media screen and (min-width: 1200px) {
+      width: calc((100% - 180px) / 6);
+
+  }
 }
 
 .clients-section__link {

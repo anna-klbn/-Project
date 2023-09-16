@@ -2,9 +2,7 @@
     text-align: center;
 }
 .card-container{
-    width: 1230px;
-    margin: 0px auto;
-    padding: 94px 15px 94px 15px;
+    @extend %container;
 }
 .card-button {
     font-weight: 500;
