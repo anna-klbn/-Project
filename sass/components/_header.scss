@@ -1,7 +1,9 @@
-.header-container {
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+    
+}
+.header-container{
     @extend %container;
-
-    border-bottom: 1px solid #ececec;
 }
 .site-nav {
     display: flex;
@@ -51,11 +53,37 @@
     background-color: $primary-blue-color;
     border-radius: 2px;
 }
+.button-menu {
+    display: inline-flex;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+
+
+    @media screen and (min-width:767px) {
+        display: none;
+    }
+}
+
+.button-menu .icon-cross {
+    display: none;
+}
+
+.button-menu.is-open .icon-cross {
+    display: block;
+}
+
+.button-menu.is-open .icon-menu {
+    display: none;
+}
 
 .auth-nav__list {
-    display: flex;
-    align-items: center;
     @extend %list;
+
+    @media screen and (min-width: 1200px) {
+         display: flex;
+        }
 }
 
 .auth-nav__link {
@@ -64,14 +92,18 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
-
-    display: flex;
     @extend %link;
 
     &:hover,
     &:focus {
         color: $primary-blue-color;
         @extend %transition
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        padding-top: 32px;
+        padding-bottom: 32px;   
     }
 }
 
@@ -83,12 +115,71 @@
     }
 }
 .auth-nav__item{
+    @media screen and (min-width: 1200px){
     &:not(:last-child) {
         margin-right: 50px;
-    }
+    }}
 
     &:hover .auth-nav__icon {
         fill: $primary-blue-color;
         @extend %transition
+    }
+}
+.menu-container.is-open {
+    display: block;
+}
+
+.menu-container {
+    background-color: $primary-white-color;
+
+    @media screen and (max-width:767px) {
+        display: none;
+        padding: 48px 40px;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+    }
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        align-items: center;
+    }
+}
+.navigation.contacts {
+    height: 40px;
+    width: 50px;
+}
+
+.networks-item {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.networks-list {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    @extend %list;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    padding: 0px;
+    margin-top: 64px;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+.networks-link {
+    @extend %link;
+    color: $primary-blue-color;
+}
+
+.networks-item {
+    &:not(:last-child) {
+        margin-right: 20px;
     }
 }

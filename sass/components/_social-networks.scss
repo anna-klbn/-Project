@@ -2,7 +2,6 @@
     padding-bottom: 30px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 
@@ -40,4 +39,12 @@
 }
 .social-networks--footer {
     background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-networks{
+    @media screen and (min-width: 768px) {
+        text-align: center;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+    }
 }

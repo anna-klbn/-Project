@@ -42,8 +42,12 @@
     line-height: 1.86;
     letter-spacing: 0.96px;
     cursor: pointer;
-    border: 1px solid $primary-blue-color;
+    border:0;
 
     padding: 10px 24px;
+    &:hover{
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+       @extend %transition;
+    }
 
 }
