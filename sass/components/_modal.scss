@@ -22,12 +22,26 @@
 }
 
 .modal {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 528px;
+    margin-left: auto;
+    margin-right: auto;
 
+    @media screen and (max-width: 767px) {
+        padding: 93px 15px;
+    }
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        width: 450px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    } 
 }
 
 .modal-close_svg {
@@ -45,6 +59,11 @@
     background-color: $primary-white-color;
     border-radius: 50%;
     cursor: pointer;
+    @media screen and (max-width: 767px) {
+        position: fixed;
+        top: 100px;
+        right: 21px;
+    }
 }
 
 .form {
@@ -124,26 +143,28 @@
 
 }
 
-
-
 .checkbox {
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 1.71;
     text-align: left;
     color: rgba(117, 117, 117, 1);
 
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
 }
 
 .form-checkbox {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+   
 }
 
 .checkbox-input {
@@ -151,13 +172,16 @@
 }
 
 .span-terms {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 1.71;
 
     color: $primary-blue-color;
     margin-left: 2px;
     text-decoration: underline;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
 }
 
 .form__button {
@@ -197,4 +221,3 @@
         fill: $primary-blue-color;
     }
 }
-

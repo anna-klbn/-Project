@@ -13,88 +13,95 @@
   <body>
     <header>
       <div class="page-header">
-        <div class="header-container">         
-          <nav class="site-nav">
-            <a class="logo" href="./index.html">Web<span>Studio</span></a>
-            <button
-              type="button"
-              class="button-menu"
-              aria-expanded="false"
-              aria-controls="menu-container"
-              data-menu-button
-            >
-              <svg
+        <div class="header-container">
+          <a class="logo" href="./index.html">Web<span>Studio</span></a>
+          <button
+            type="button"
+            class="button-menu"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
               class="menu-svg"
-              width="40px"
-              height="40px"
+              width="24px"
+              height="16px"
               aria-label="Перемикач меню"
             >
-              <use href="#" class="icon-cross"></use>
-              <use href="#" class="icon-cross"></use>
+              <use
+                href="./images/icons.svg/sprite.svg#icon-close_menu"
+                class="icon-close"
+              ></use>
+              <use
+                href="./images/icons.svg/sprite.svg#icon-menu"
+                class="icon-menu"
+              ></use>
             </svg>
-            </button>
-            <div class="menu-container" data-menu id="menu-container">
+          </button>
+
+          <div class="menu-container" data-menu id="menu-container">
+            <nav class="site-nav">
               <ul class="site-nav__list">
                 <li class="site-nav__item">
-                  <a class="site-nav__link current" href="./index.html">Студія</a>
+                  <a class="site-nav__link current" href="./index.html"
+                    >Студія</a
+                  >
                 </li>
                 <li class="site-nav__item">
-                  <a class="site-nav__link" href="./portfolio.html">Портфоліо</a>
+                  <a class="site-nav__link" href="./portfolio.html"
+                    >Портфоліо</a
+                  >
                 </li>
                 <li class="site-nav__item">
                   <a class="site-nav__link" href="#">Контакти</a>
                 </li>
               </ul>
-          </nav>
-            <div class="contacts">
-              <ul class="auth-nav__list"></div>
-                <li class="auth-nav__item">
+            </nav>
+            <ul class="auth-nav__list">
+              <li class="auth-nav__item">
                 <a class="auth-nav__link" href="mailto:info@devstudio.com">
-                <svg class="auth-nav__icon" width="20px" height="15px">
-                  <use href="./images/icons.svg/sprite.svg#icon-mail"></use>
-                </svg>
-                <span>info@devstudio.com</span></a
+                  <svg class="auth-nav__icon" width="20px" height="15px">
+                    <use href="./images/icons.svg/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <span>info@devstudio.com</span></a
                 >
-                </li>
-                <li class="auth-nav__item">
-                  <a class="auth-nav__link" href="tel:+380961111111">
-                   <svg class="auth-nav__icon" width="16px" height="15px">
+              </li>
+              <li class="auth-nav__item">
+                <a class="auth-nav__link" href="tel:+380961111111">
+                  <svg class="auth-nav__icon" width="16px" height="15px">
                     <use href="./images/icons.svg/sprite.svg#icon-phone"></use>
                   </svg>
                   <span>+38 096 111 11 11</span></a
-                   >
+                >
+              </li>
+            </ul>
+            <div class="networks">
+              <ul class="networks-list">
+                <li class="networks-item">
+                  <a href="https://www.instagram.com/" class="networks-link"
+                    >Instagram</a
+                  >
                 </li>
-             </ul>
-           </div>
-              <div class="networks">
-                <ul class="networks-list">
-                  <li class="networks-item">
-                    <a href="https://www.instagram.com/" class="networks-link"
-                      >Instagram</a
-                    >
-                  </li>
-                  <li class="networks-item">
-                    <a href="https://twitter.com/?lang=ru" class="networks-link"
-                      >Twitter</a
-                    >
-                  </li>
-                  <li class="networks-item">
-                    <a
-                      href="https://www.facebook.com/campaign/landing.php?campaign_id=1600506847&extra_1=s%7Cc%7C303881997266%7Ce%7C%D1%84%D0%B5%D0%B9%D1%81%D0%B1%D1%83%D0%BA%7C&placement=&creative=303881997266&keyword=%D1%84%D0%B5%D0%B9%D1%81%D0%B1%D1%83%D0%BA&partner_id=googlesem&extra_2=campaignid%3D1600506847%26adgroupid%3D60825662376%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-300034615170%26loc_physical_ms%3D9061011%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAiAqaWdBhAvEiwAGAQltpSBk_vRXSckcD91USAbBVooGAIC-0OybKQHVuUnuddjjpfnG4Aw6hoCv6QQAvD_BwE"
-                      class="networks-link"
-                      >Facebook</a
-                    >
-                  </li>
-                  <li class="networks-item">
-                    <a href="https://ua.linkedin.com/" class="networks-link"
-                      >LinkedIn</a
-                    >
-                  </li>
-                </ul>
-              </div>
-
+                <li class="networks-item">
+                  <a href="https://twitter.com/?lang=ru" class="networks-link"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="networks-item">
+                  <a
+                    href="https://www.facebook.com/campaign/landing.php?campaign_id=1600506847&extra_1=s%7Cc%7C303881997266%7Ce%7C%D1%84%D0%B5%D0%B9%D1%81%D0%B1%D1%83%D0%BA%7C&placement=&creative=303881997266&keyword=%D1%84%D0%B5%D0%B9%D1%81%D0%B1%D1%83%D0%BA&partner_id=googlesem&extra_2=campaignid%3D1600506847%26adgroupid%3D60825662376%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-300034615170%26loc_physical_ms%3D9061011%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAiAqaWdBhAvEiwAGAQltpSBk_vRXSckcD91USAbBVooGAIC-0OybKQHVuUnuddjjpfnG4Aw6hoCv6QQAvD_BwE"
+                    class="networks-link"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="networks-item">
+                  <a href="https://ua.linkedin.com/" class="networks-link"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
             </div>
-    
+          </div>
         </div>
       </div>
     </header>
@@ -201,7 +208,11 @@
           <h2 class="teams-section__title">Наша команда</h2>
           <ul class="teams-section__list">
             <li class="teams-section__item">
-              <img src="./images/team-card-1.jpg" alt="чоловік" class="team-section__image" />
+              <img
+                src="./images/team-card-1.jpg"
+                alt="чоловік"
+                class="team-section__image"
+              />
               <p class="teams-section__name">Ігор Дем'яненко</p>
               <p class="teams-section__profession">Product Designer</p>
               <div class="social-networks">
@@ -248,7 +259,11 @@
               </div>
             </li>
             <li class="teams-section__item">
-              <img src="./images/team-card-2.jpg" alt="жінка" class="team-section__image"/>
+              <img
+                src="./images/team-card-2.jpg"
+                alt="жінка"
+                class="team-section__image"
+              />
               <p class="teams-section__name">Ольга Рєпіна</p>
               <p class="teams-section__profession">Frontend Developer</p>
               <div class="social-networks">
@@ -295,7 +310,11 @@
               </div>
             </li>
             <li class="teams-section__item">
-              <img src="./images/team-card-3.jpg" alt="чоловік" class="team-section__image" />
+              <img
+                src="./images/team-card-3.jpg"
+                alt="чоловік"
+                class="team-section__image"
+              />
               <p class="teams-section__name">Микола Тарасов</p>
               <p class="teams-section__profession">Marketing</p>
               <div class="social-networks">
@@ -342,7 +361,11 @@
               </div>
             </li>
             <li class="teams-section__item">
-              <img src="./images/team-card-4.jpg" alt="чоловік" class="team-section__image" />
+              <img
+                src="./images/team-card-4.jpg"
+                alt="чоловік"
+                class="team-section__image"
+              />
               <p class="teams-section__name">Михайло Єрмаков</p>
               <p class="teams-section__profession">UI Designer</p>
               <div class="social-networks">
@@ -430,9 +453,9 @@
                 </svg>
               </a>
             </li>
-            <li class="clients-sections__item">
+            <li class="clients-section__item">
               <a href="#" class="clients-section__link">
-                <svg class="clients-section__icon" width="110px" height="60px">
+                <svg class="clients-section__icon" width="94px" height="44px">
                   <use href="./images/icons.svg/sprite.svg#icon-group-6"></use>
                 </svg>
               </a>
@@ -456,7 +479,7 @@
                   >
                 </li>
                 <li class="footer-item">
-                   <a class="footer-link" href="mailto:info@devstudio.com">
+                  <a class="footer-link" href="mailto:info@devstudio.com">
                     info@devstudio.com</a
                   >
                 </li>
@@ -469,42 +492,44 @@
             </address>
           </div>
           <div class="footer-networks">
-          <h2 class="footer-networks__title">приєднуйтесь</h2>
+            <h2 class="footer-networks__title">приєднуйтесь</h2>
             <div class="social-networks">
               <a
-              href="https://www.instagram.com/"
-              class="social-networks__link social-networks--footer"
-            >
-              <svg class="social-networks__icon" width="20px" height="20px">
-                <use href="./images/icons.svg/sprite.svg#icon-instagram"></use>
-              </svg>
+                href="https://www.instagram.com/"
+                class="social-networks__link social-networks--footer"
+              >
+                <svg class="social-networks__icon" width="20px" height="20px">
+                  <use
+                    href="./images/icons.svg/sprite.svg#icon-instagram"
+                  ></use>
+                </svg>
               </a>
               <a
-              href="https://twitter.com/?lang=ru"
-              class="social-networks__link social-networks--footer"
-            >
-              <svg class="social-networks__icon" width="20px" height="20px">
-                <use href="./images/icons.svg/sprite.svg#icon-twitter"></use>
-              </svg>
+                href="https://twitter.com/?lang=ru"
+                class="social-networks__link social-networks--footer"
+              >
+                <svg class="social-networks__icon" width="20px" height="20px">
+                  <use href="./images/icons.svg/sprite.svg#icon-twitter"></use>
+                </svg>
               </a>
               <a
-              href="https://www.facebook.com/campaign/landing.php?campaign_id=1600506847&extra_1=s%7Cc%7C303881997266%7Ce%7Cfacebook%7C&placement=&creative=303881997266&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1600506847%26adgroupid%3D60825662376%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D9061017%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjwk5ibBhDqARIsACzmgLS20S6d199CFgXnEPTuI3Y1fT3HdiY8mUJOlCahxcN-MQEV9aZu_6UaAieMEALw_wcB"
-              class="social-networks__link social-networks--footer"
-            >
-              <svg class="social-networks__icon" width="20px" height="20px">
-                <use href="./images/icons.svg/sprite.svg#icon-facebook"></use>
-              </svg>
+                href="https://www.facebook.com/campaign/landing.php?campaign_id=1600506847&extra_1=s%7Cc%7C303881997266%7Ce%7Cfacebook%7C&placement=&creative=303881997266&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1600506847%26adgroupid%3D60825662376%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D9061017%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjwk5ibBhDqARIsACzmgLS20S6d199CFgXnEPTuI3Y1fT3HdiY8mUJOlCahxcN-MQEV9aZu_6UaAieMEALw_wcB"
+                class="social-networks__link social-networks--footer"
+              >
+                <svg class="social-networks__icon" width="20px" height="20px">
+                  <use href="./images/icons.svg/sprite.svg#icon-facebook"></use>
+                </svg>
               </a>
               <a
-              href="https://ua.linkedin.com/"
-              class="social-networks__link social-networks--footer"
-            >
-              <svg class="social-networks__icon" width="20px" height="20px">
-                <use href="./images/icons.svg/sprite.svg#icon-linkedin"></use>
-              </svg>
+                href="https://ua.linkedin.com/"
+                class="social-networks__link social-networks--footer"
+              >
+                <svg class="social-networks__icon" width="20px" height="20px">
+                  <use href="./images/icons.svg/sprite.svg#icon-linkedin"></use>
+                </svg>
               </a>
             </div>
-        </div>
+          </div>
         </div>
         <form class="footer-form">
           <div>
@@ -532,8 +557,8 @@
       <div class="modal">
         <form class="form" js-speaker-form>
           <button data-modal-close class="modal-close">
-            <svg class="modal-close_svg" width="10px" height="10px">
-              <use href="./images/icon.svg/sprite.svg#icon-form-phone"></use>
+            <svg class="modal-close_svg" width="20px" height="20px">
+              <use href="./images/icon.svg/sprite.svg#icon-close_menu"></use>
             </svg>
           </button>
           <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>

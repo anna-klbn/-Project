@@ -8,9 +8,14 @@
     letter-spacing: 0.78px;
     @extend %link;
 
+    @media screen and (min-width: 768px) {
+        margin-right: 87px;
+    }
+
     @media screen and (min-width: 1200px){
         font-size: 26px;
         line-height: 1.2;
+        margin-right: 92px;
     }
 }
 .logo span {
