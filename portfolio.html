@@ -13,41 +13,97 @@
   </head>
   <body>
     <header>
-      <div class="header-container">
-        <nav class="site-nav">
+      <div class="page-header">
+        <div class="header-container">
           <a class="logo" href="./index.html">Web<span>Studio</span></a>
-          <ul class="site-nav__list">
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="./index.html">Студія</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link current" href="./portfolio.html"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="#">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="auth-nav__list">
-          <li class="auth-nav__item">
-            <a class="auth-nav__link" href="mailto:info@devstudio.com">
-              <svg class="auth-nav__icon" width="20px" height="15px">
-                <use href="./images/icons.svg/sprite.svg#icon-mail"></use>
-              </svg>
-              <span>info@devstudio.com</span></a
+          <button
+            type="button"
+            class="button-menu"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              class="menu-svg"
+              width="24px"
+              height="16px"
+              aria-label="Перемикач меню"
             >
-          </li>
-          <li class="auth-nav__item">
-            <a class="auth-nav__link" href="tel:+380961111111">
-              <svg class="auth-nav__icon" width="16px" height="15px">
-                <use href="./images/icons.svg/sprite.svg#icon-phone"></use>
-              </svg>
-              <span>+38 096 111 11 11</span></a
-            >
-          </li>
-        </ul>
+              <use
+                href="./images/icons.svg/sprite.svg#icon-close_menu"
+                class="icon-close"
+              ></use>
+              <use
+                href="./images/icons.svg/sprite.svg#icon-menu"
+                class="icon-menu"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="menu-container" data-menu id="menu-container">
+            <nav class="site-nav">
+              <ul class="site-nav__list">
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="./index.html"
+                    >Студія</a
+                  >
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link current" href="./portfolio.html"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="#">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="auth-nav__list">
+              <li class="auth-nav__item">
+                <a class="auth-nav__link" href="mailto:info@devstudio.com">
+                  <svg class="auth-nav__icon" width="20px" height="15px">
+                    <use href="./images/icons.svg/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <span>info@devstudio.com</span></a
+                >
+              </li>
+              <li class="auth-nav__item">
+                <a class="auth-nav__link" href="tel:+380961111111">
+                  <svg class="auth-nav__icon" width="16px" height="15px">
+                    <use href="./images/icons.svg/sprite.svg#icon-phone"></use>
+                  </svg>
+                  <span>+38 096 111 11 11</span></a
+                >
+              </li>
+            </ul>
+            <div class="networks">
+              <ul class="networks-list">
+                <li class="networks-item">
+                  <a href="https://www.instagram.com/" class="networks-link"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="networks-item">
+                  <a href="https://twitter.com/?lang=ru" class="networks-link"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="networks-item">
+                  <a
+                    href="https://www.facebook.com/campaign/landing.php?campaign_id=1600506847&extra_1=s%7Cc%7C303881997266%7Ce%7C%D1%84%D0%B5%D0%B9%D1%81%D0%B1%D1%83%D0%BA%7C&placement=&creative=303881997266&keyword=%D1%84%D0%B5%D0%B9%D1%81%D0%B1%D1%83%D0%BA&partner_id=googlesem&extra_2=campaignid%3D1600506847%26adgroupid%3D60825662376%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-300034615170%26loc_physical_ms%3D9061011%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAiAqaWdBhAvEiwAGAQltpSBk_vRXSckcD91USAbBVooGAIC-0OybKQHVuUnuddjjpfnG4Aw6hoCv6QQAvD_BwE"
+                    class="networks-link"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="networks-item">
+                  <a href="https://ua.linkedin.com/" class="networks-link"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -74,7 +130,9 @@
           <ul class="card-set__list">
             <li class="card-set__item">
               <div class="card-overlay">
-                <img src="./images/img-1.jpg" alt="веб-сайт" width="370px" />
+                <img srcset="./images/card-1.jpg 1x,
+                  ./images/card-1@2x.jpg 2x,
+                  ./images/card-1@3x.jpg 3x" alt="веб-сайт"  width="100%"/>
                 <div class="card-overlay__container">
                   <p class="card-overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -88,7 +146,9 @@
             </li>
             <li class="card-set__item">
               <div class="card-overlay">
-                <img src="./images/img-2.jpg" alt="постер" width="370px" />
+                <img srcset="./images/card-2.jpg 1x,
+                  ./images/card-2@2x.jpg 2x,
+                  ./images/card-2@3x.jpg 3x" alt="постер"  width="100%"/>
                 <div class="card-overlay__container">
                   <p class="card-overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -104,9 +164,11 @@
             <li class="card-set__item">
               <div class="card-overlay">
                 <img
-                  src="./images/img-3.jpg"
+                  srcset="./images/card-3.jpg 1x,
+                  ./images/card-3@2x.jpg 2x,
+                  ./images/card-3@3x.jpg 3x"
                   alt="логотип ресторану"
-                  width="370px"
+                  width="100%"
                 />
                 <div class="card-overlay__container">
                   <p class="card-overlay__text">
@@ -121,7 +183,10 @@
             </li>
             <li class="card-set__item">
               <div class="card-overlay">
-                <img src="./images/img-4.jpg" alt="навушники" width="370px" />
+                <img 
+                  srcset="./images/card-4.jpg 1x,
+                  ./images/card-4@2x.jpg 2x,
+                  ./images/card-4@3x.jpg 3x" alt="навушники" width="370px" />
                 <div class="card-overlay__container">
                   <p class="card-overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -135,7 +200,9 @@
             </li>
             <li class="card-set__item">
               <div class="card-overlay">
-                <img src="./images/img-5.jpg" alt="коробки" width="370px" />
+                <img srcset="./images/card-5.jpg 1x,
+                  ./images/card-5@2x.jpg 2x,
+                  ./images/card-5@3x.jpg 3x" alt="коробки" width="100%" />
                 <div class="card-overlay__container">
                   <p class="card-overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -149,7 +216,9 @@
             </li>
             <li class="card-set__item">
               <div class="card-overlay">
-                <img src="./images/img-6.jpg" alt="веб-сайт" width="370px" />
+                <img srcset="./images/card-6.jpg 1x,
+                  ./images/card-6@2x.jpg 2x,
+                  ./images/card-6@3x.jpg 3x" alt="веб-сайт" width="100%" />
                 <div class="card-overlay__container">
                   <p class="card-overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -163,7 +232,9 @@
             </li>
             <li class="card-set__item">
               <div class="card-overlay">
-                <img src="./images/img-7.jpg" alt="журнал" width="370px" />
+                <img srcset="./images/card-7.jpg 1x,
+                  ./images/card-7@2x.jpg 2x,
+                  ./images/card-7@3x.jpg 3x" alt="журнал" width="100%" />
                 <div class="card-overlay__container">
                   <p class="card-overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -177,7 +248,9 @@
             </li>
             <li class="card-set__item">
               <div class="card-overlay">
-                <img src="./images/img-8.jpg" alt="логотип" width="370px" />
+                <img srcset="./images/card-8.jpg 1x,
+                  ./images/card-8@2x.jpg 2x,
+                  ./images/card-8@3x.jpg 3x" alt="логотип" width="100%" />
                 <div class="card-overlay__container">
                   <p class="card-overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -191,7 +264,9 @@
             </li>
             <li class="card-set__item">
               <div class="card-overlay">
-                <img src="./images/img-9.jpg" alt="ноутбук" width="370px" />
+                <img srcset="./images/card-9.jpg 1x,
+                  ./images/card-9@2x.jpg 2x,
+                  ./images/card-9@3x.jpg 3x" alt="ноутбук" width="100%" />
                 <div class="card-overlay__container">
                   <p class="card-overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем

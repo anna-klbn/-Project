@@ -2,7 +2,6 @@
     @media screen and (max-width: 1199px) {
         padding-bottom: 60px;
         padding-top: 60px;
-    
     }
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
@@ -28,7 +27,6 @@
     flex-wrap: wrap;
     align-items: center;
     margin: -15px;
-
 }
 
 .clients-section__item{
@@ -61,7 +59,7 @@
         border-color:$primary-blue-color;
         @extend %transition;
         }
-
+        
     &:hover .clients-section__icon {
         fill: $primary-blue-color;
         @extend %transition;

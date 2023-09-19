@@ -16,8 +16,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        
     }
     @media screen and (min-width:768px) {
         display: flex;
@@ -54,7 +52,6 @@
 
         margin-bottom: 302px;
         font-size: 40px;
-        line-height: 47px;
     }
 }
 
@@ -104,7 +101,6 @@
     padding: 0px;
     border: none;
     background-color: transparent;
-
 
     @media screen and (min-width:767px) {
         display: none;
