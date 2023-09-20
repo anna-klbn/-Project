@@ -148,6 +148,7 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+  
     @extend %link;
 
     &:hover,
@@ -160,6 +161,10 @@
         &:hover, &:focus{
         font-size: 34px;
         }
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -213,6 +218,10 @@
     @media screen and (min-width:768px) {
         display: flex;
         align-items: center;
+        margin-left: 83px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-left: 0px;
     }
 }
 

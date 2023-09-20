@@ -1,23 +1,97 @@
 .hero-section {
+    background-position: 50% 50%;
+    background-size: cover;
     text-align: center;
+    background-color: #2f303a;
+
+    @media screen and (max-width: 767px) {
+        
+        background-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0.2),
+                rgba(47, 48, 58, 0.4)),
+                url(../images/Header-mobile.img.jpg);
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right,
+                    rgba(0, 0, 0, 0.2),
+                    rgba(47, 48, 58, 0.4)),
+                    url(../images/Header-mobile.img@2x.jpg);
+    
+            }
+        }
+    
+        @media screen and (min-width: 768px) {
+          
+            background-image: linear-gradient(to right,
+                    rgba(0, 0, 0, 0.2),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/Header-tablet.img.jpg);
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right,
+                        rgba(0, 0, 0, 0.2),
+                        rgba(47, 48, 58, 0.4)),
+                    url(../images/Header-tablet.img@2x.jpg);
+    
+            }
+        }
+    
+        @media screen and (min-width: 1200px) {
+           
+            width: 100%;
+            max-width: 1600px;
+            height: 600px;
+            background-image: linear-gradient(to right,
+                    rgba(0, 0, 0, 0.2),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/Header-decktop.jpg);
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right,
+                        rgba(0, 0, 0, 0.2),
+                        rgba(47, 48, 58, 0.4)),
+                    url(../images/Header-decktop.Img@2x.jpg);
+    
+            }
+        }
 }
 
-.hero-container {
-    
+.hero-container {  
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 360px;
 
+    @media screen and (max-width: 767px) {
+        padding: 118px 0px;
+    }
     
+    @media screen and (min-width: 768px) {
+        padding: 118px 0px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 200px 0px;
+        max-width: 696px;
+    }
 }
 
 .hero-section__title {
     color: $primary-white-color;
-    font-size: 44px;
+    font-size: 26px;
     font-weight: 900;
     line-height: 1.36;
     letter-spacing: 2.64px;
     text-transform: uppercase;
-
     margin-bottom: 30px;
-    padding-top: 200px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+    }
 }
 
 .hero-section__button {
@@ -37,6 +111,9 @@
     &:hover{
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
        @extend %transition;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 10px 32px;
     }
 
 }
