@@ -2,7 +2,6 @@
     background-color: $primary-gray-color;
 }
 .footer-container {
-    @extend %container;
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
@@ -26,7 +25,7 @@
 
 .footer-list {
     margin-top: 20px;
-    @extend %list;
+   
 }
 
 .footer-item{
@@ -41,7 +40,6 @@
     font-size: 14px;
     line-height: 1.71;
     font-style: normal;
-    @extend %link;
 
     &:hover, 
     &:focus{
@@ -65,7 +63,7 @@
 
 .footer-networks__list {
     display: flex;
-    @extend %list;
+    
 }
 
 .footer-form {

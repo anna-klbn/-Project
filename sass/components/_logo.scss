@@ -6,7 +6,6 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.78px;
-    @extend %link;
 
     @media screen and (min-width: 1200px){
         font-size: 26px;
@@ -14,6 +13,7 @@
         margin-right: 92px;
     }
 }
+
 .logo span {
     color: #000;
 }

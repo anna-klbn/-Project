@@ -18,11 +18,20 @@ body {
   letter-spacing: 0.03em;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 h1,
 h2,
 h3,
-p,
-ul {
+p {
   margin: 0;
   padding: 0;
 }
@@ -39,11 +48,57 @@ img {
   display: block;
 }
 
-.footer-networks__list, .footer-list, .card-set__list, .buttons-list, .clients-section__list, .teams-section__list, .work-section__list, .skills-section__list, .networks-list, .auth-nav__item, .site-nav__list {
+.section {
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.167;
+    margin: 0 0 50px 0;
+  }
+}
+
+.card-set__list {
   list-style: none;
 }
 
-.footer-link, .clients-section__link, .social-networks__link, .networks-link, .auth-nav__link, .site-nav__link, .logo {
+.networks-link {
   text-decoration: none;
 }
 
@@ -56,28 +111,6 @@ img {
 .footer-form__input:hover, .footer-form__input:focus, .footer-link:hover, .footer-link:focus, .card-set__item:hover .card-overlay__container, .card-button:hover, .card-button:focus, .clients-section__link:hover .clients-section__icon, .clients-section__link:hover, .social-networks__link:hover .social-networks__icon, .social-networks__link:hover, .form__button:hover, .form__button:focus, .comment-text:hover, .comment-text:focus, .form-input:hover, .form-input:focus, .hero-section__button:hover, .auth-nav__item:hover .auth-nav__icon, .auth-nav__link:hover, .auth-nav__link:focus, .site-nav__link:hover, .site-nav__link:focus {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-container, .card-container, .clients-container, .teams-container, .work-container, .skills-container, .header-container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media screen and (min-width: 480px) {
-  .footer-container, .card-container, .clients-container, .teams-container, .work-container, .skills-container, .header-container {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer-container, .card-container, .clients-container, .teams-container, .work-container, .skills-container, .header-container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-container, .card-container, .clients-container, .teams-container, .work-container, .skills-container, .header-container {
-    width: 1200px;
-  }
 }
 
 .logo {
@@ -190,7 +223,6 @@ img {
 .site-nav__link.current {
   color: #2196F3;
 }
-
 @media screen and (min-width: 768px) {
   .site-nav__link.current::after {
     content: "";
@@ -231,7 +263,7 @@ img {
 
 .button-menu.is-open {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top: 20px;
   right: 15px;
 }
@@ -323,10 +355,12 @@ img {
   .menu-container {
     display: none;
     padding: 48px 40px;
-    position: absolute;
+    position: fixed;
+    z-index: 1;
     top: 0%;
     left: 0%;
     width: 100%;
+    height: 100vh;
   }
 }
 @media screen and (min-width: 768px) {
@@ -541,6 +575,8 @@ img {
   background-color: #FFF;
   border-radius: 50%;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 767px) {
   .modal-close {
@@ -691,19 +727,6 @@ img {
   fill: #2196F3;
 }
 
-@media screen and (max-width: 1199px) {
-  .skills-section {
-    padding-bottom: 60px;
-    padding-top: 60px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .skills-section {
-    padding-bottom: 94px;
-    padding-top: 94px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .skills-section__list {
     display: flex;
@@ -737,11 +760,6 @@ img {
 }
 
 .skills-section__title {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
   margin-top: 30px;
 }
 @media screen and (max-width: 767px) {
@@ -789,17 +807,9 @@ img {
   }
 }
 
-.work-section__title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
 .work-section__list {
   display: flex;
+  justify-content: center;
 }
 
 .work-section__item {
@@ -826,34 +836,6 @@ img {
 .teams-section {
   text-align: center;
   background-color: #F5F4FA;
-}
-@media screen and (max-width: 1199px) {
-  .teams-section {
-    padding-bottom: 60px;
-    padding-top: 60px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .teams-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
-.teams-section__title {
-  font-weight: 700;
-  line-height: 42px;
-}
-@media screen and (max-width: 1199px) {
-  .teams-section__title {
-    margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .teams-section__title {
-    font-size: 36px;
-    margin-bottom: 50px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -950,30 +932,6 @@ img {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .clients-section {
-    padding-bottom: 60px;
-    padding-top: 60px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .clients-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
-.clients-container {
-  text-align: center;
-}
-
-.clients-section__title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 42px;
-  margin-bottom: 50px;
-}
-
 .clients-section__list {
   display: flex;
   flex-wrap: wrap;
@@ -1016,23 +974,6 @@ img {
 
 .clients-section__icon {
   fill: rgb(175, 177, 184);
-}
-
-.card-section {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media screen and (max-width: 1199px) {
-  .card-section {
-    padding-bottom: 60px;
-    padding-top: 60px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .card-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 @media screen and (max-width: 767px) {

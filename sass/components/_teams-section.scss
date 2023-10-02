@@ -1,37 +1,9 @@
 .teams-section {
     text-align: center;
     background-color: $primary-backgraund-color;
-    @media screen and (max-width: 1199px) {
-        padding-bottom: 60px;
-        padding-top: 60px;
-    }
-
-    @media screen and (min-width: 1200px){
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
-}
-
-.teams-container {
-    @extend %container;
-}
-
-.teams-section__title {
-    font-weight: 700;
-    line-height: 42px;
-    
-    @media screen and (max-width: 1199px) {
-        margin-bottom: 30px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        font-size: 36px;
-        margin-bottom: 50px;
-    }
 }
 
 .teams-section__list {
-    @extend %list;
 
     @media screen and (min-width: 768px) {
         display: flex;

@@ -6,22 +6,11 @@
         padding-bottom: 94px;
     }
 }
-.work-container {
-    @extend %container;
-}
-.work-section__title {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.08px;
-    text-align: center;
-
-    margin-bottom: 50px;
-}
 
 .work-section__list {
     display: flex;
-    @extend %list;
+    justify-content: center;
+    
 }
 
 .work-section__item{

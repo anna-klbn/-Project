@@ -1,28 +1,4 @@
-.clients-section{
-    @media screen and (max-width: 1199px) {
-        padding-bottom: 60px;
-        padding-top: 60px;
-    }
-    @media screen and (min-width: 1200px) {
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
-}
-.clients-container {
-    text-align: center;
-    @extend %container;
-}
-
-.clients-section__title {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 42px;
-    
-    margin-bottom: 50px;
-}
-
 .clients-section__list {
-    @extend %list;
     display:flex;
     flex-wrap: wrap;
     align-items: center;
@@ -53,7 +29,6 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    @extend %link;
 
     &:hover {
         border-color:$primary-blue-color;
@@ -69,4 +44,3 @@
 .clients-section__icon {
     fill: rgba(175, 177, 184, 1);
 }
-
